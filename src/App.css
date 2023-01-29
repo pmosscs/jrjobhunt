@@ -1,38 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.App * {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
-  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #bbd6c8;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 500px;
+  background-color: white;
+  padding: 50px 50px 40px 50px;
+  border: solid lightgray 1px;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 50px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  color: #183a47;
+}
+
+p {
+  text-align: center;
+  font-size: 23px;
+  font-family: 'Roboto Slab', serif;
+  color: #3f3f3f;
+}
+
+.mid-title {
+  margin-bottom: 20px;
+}
+
+.info {
+  margin-bottom: 50px;
+}
+
+input, button {
+  font-size: 22px;
+  border: none;
+  
+}
+
+.button-bar, .input-bar {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.button-bar {
+  padding-right: 22px;
+  padding-left: 20px;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px;
+  background-color: #183a47;
+  border-top: solid gray 2px;
+  border-right: solid gray 2px;
+  border-bottom: solid gray 2px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.input-bar {
+  padding-left: 22px;
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 100px;
+  background-color: rgb(222, 244, 252);
+  width: 260px;
+  border-top: solid gray 2px;
+  border-left: solid gray 2px;
+  border-bottom: solid gray 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bar {
+  width: 300px;
+  height: 2px;
+  background-color: #183a47;
+  margin-bottom: 30px;
 }
+
+.button-bar:hover {
+  cursor: pointer;
+  background-color: #2b6176;
+}
+
+.button-bar:active {
+  background-color: #395c69;
+  position: relative;
+  padding-right: 21px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.thank-you-message {
+  font-size: 18px;
+  background-color:  rgb(222, 244, 252);
+  border-radius: 25px;
+  padding: 15px;
+  border: solid gray 2px;
+}
+
+.submitted-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.disclaimer {
+  font-size: 13px;
+  color: rgb(160, 160, 160);
+  margin-top: 15px;
+}
+
+
+/* 
+<!-- HTML !-->
+<button class="button-18" role="button">Button 18</button>
+
+.button-18 {
+  align-items: center;
+  background-color: #0A66C2;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.button-18:hover,
+.button-18:focus { 
+  background-color: #16437E;
+  color: #ffffff;
+}
+
+.button-18:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.button-18:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+} */
