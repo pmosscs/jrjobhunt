@@ -1,7 +1,23 @@
+import axios from "axios";
 import React, { useState } from "react";
 
 function Form() {
   const [submitted, setSubmitted] = useState(false);
+  const [input, setInput] = useState("");
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    setSubmitted(true);
+    const body = {
+      email: input,
+    };
+    axios
+      .post("http://localhost:4000/adduser", body)
+      .then((res) => {
+        console.log(res.data);
+      })
+      .catch((error) => console.log(error));
+  };
 
   return (
     <div>
@@ -11,14 +27,9 @@ function Form() {
             className="input-bar"
             type="email"
             placeholder="Your Email Here"
+            onChange={(e) => setInput(e.target.value)}
           />
-          <button
-            className="button-bar"
-            onClick={(e) => {
-              e.preventDefault();
-              setSubmitted(true);
-            }}
-          >
+          <button className="button-bar" onClick={submitHandler}>
             Submit
           </button>
           <p className="disclaimer">
