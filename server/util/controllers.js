@@ -13,7 +13,7 @@ module.exports = {
     let apiInstance = new SibApiV3Sdk.ContactsApi();
     let createContact = new SibApiV3Sdk.CreateContact();
     createContact.email = email;
-    createContact.listIds = [2];
+    createContact.listIds = [8];
 
     apiInstance.createContact(createContact).then(
       (data) => {
