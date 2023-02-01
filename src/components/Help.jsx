@@ -21,9 +21,10 @@ function Help() {
             <h1 className="help-section">Where is my welcome email?</h1>
             <div>
               <p className="help-p2">
-                Not in your inbox? Try checking your spam, then check your
-                spelling and resubmit. If it doesn't show up after waiting a few
-                minutes, reach out to us at contact@jrjobhunt.com
+                Not in your inbox? Try checking your spam and promotion folders,
+                then check your spelling and resubmit. If it doesn't show up
+                after waiting a few minutes, reach out to us at
+                contact@jrjobhunt.com
               </p>
             </div>
             <h1 className="help-section">Are you accepting advertisers?</h1>
