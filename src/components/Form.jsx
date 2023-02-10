@@ -1,11 +1,14 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { emailSchema } from "./validation/EmailValidation";
+// import ReCAPTCHA from "react-google-recaptcha";
 
 function Form() {
   const [submitted, setSubmitted] = useState(false);
   const [input, setInput] = useState("");
   const [invalidClass, setInvalidClass] = useState(false);
+
+  // console.log("Captcha value:", value)
 
   const submitHandler = async (e) => {
     e.preventDefault();
@@ -15,11 +18,12 @@ function Form() {
     const isValid = await emailSchema.isValid(body);
     if (isValid) {
       setSubmitted(true);
-      axios.post("http://localhost:4000/adduser", body);
-      // .then((res) => {
-      //   console.log(res.data);
-      // })
-      // .catch((error) => console.log(error));
+      axios
+        .post("http://localhost:4000/adduser", body)
+        .then((res) => {
+          console.log(res.data);
+        })
+        .catch((error) => console.log(error));
     } else {
       setInvalidClass(true);
     }
@@ -38,6 +42,10 @@ function Form() {
             placeholder="Your Email Here"
             onChange={(e) => setInput(e.target.value)}
           />
+          {/* <ReCAPTCHA
+            sitekey="6LebeWUkAAAAAG9Hi6Y1sUXlSrHtxhHQE_4nKG2_"
+            onChange={onChange}
+          /> */}
           <button className="button-bar" onClick={submitHandler}>
             Submit
           </button>
