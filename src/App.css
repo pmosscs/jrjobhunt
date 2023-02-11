@@ -51,7 +51,7 @@ p {
 }
 
 .info {
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 
 input, button {
@@ -270,6 +270,48 @@ header {
   margin-top: 20px;
 }
 
+.survey-button {
+  padding: 15px 20px;
+  border-radius: 100px;
+  background-color: #183a47;
+  border-top: solid gray 2px;
+  border-right: solid gray 2px;
+  border-bottom: solid gray 2px;
+  color: white;
+}
+
+.survey-button:hover {
+  cursor: pointer;
+  background-color: #2b6176;
+}
+
+.survey-button:active {
+  background-color: #395c69;
+  position: relative;
+  top: 2px
+}
+
+.pages {
+  width: 500px;
+  padding: 8px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.pages * {
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bar-div {
+  margin-top: 20px;
+}
 
 
 @media only screen and (max-width: 600px) {

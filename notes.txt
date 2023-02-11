@@ -1,2 +1,7 @@
 to do: 
 
+create new page for email validation redirect that says thank you, and has a link to the survey.
+
+design validation template
+
+plan weekly email

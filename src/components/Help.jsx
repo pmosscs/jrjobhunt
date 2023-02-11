@@ -18,13 +18,12 @@ function Help() {
         <h1 className="help-intro">JrJobHunt.com/help - the FAQ's</h1>
         <div className="center-help">
           <div className="section-div">
-            <h1 className="help-section">Where is my welcome email?</h1>
+            <h1 className="help-section">Where is my confirmation email?</h1>
             <div>
               <p className="help-p2">
-                Not in your inbox? Try checking your spam and promotion folders,
+                Not in your inbox? Try checking your promotion and spam folders,
                 then check your spelling and resubmit. If it doesn't show up
-                after waiting a few minutes, reach out to us at
-                contact@jrjobhunt.com
+                after a few minutes, reach out to us at contact@jrjobhunt.com
               </p>
             </div>
             <h1 className="help-section">Are you accepting advertisers?</h1>
@@ -58,9 +57,7 @@ function Help() {
             </div>
             <h1 className="help-section">Will I be spammed with emails?</h1>
             <div>
-              <p className="help-p2">
-                Nope. Besides the welcome email, we send 1 email a week.
-              </p>
+              <p className="help-p2">Nope. We send one email a week.</p>
             </div>
           </div>
         </div>

@@ -3,6 +3,7 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import Help from "./components/Help";
+import Welcome from "./components/Welcome";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route index element={<Home />} />
         <Route path="/help" element={<Help />} />
+        <Route path="/welcome" element={<Welcome />} />
       </Routes>
     </div>
   );

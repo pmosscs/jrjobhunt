@@ -49,5 +49,3 @@ module.exports = {
     );
   },
 };
-
-/// smtp key = xsmtpsib-d365ce9268b6a75df6502fd2eab9eb5925d1ee83e3a8fc7d4456f92765220fbc-3czZn29kPD7vIa0y

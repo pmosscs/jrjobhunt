@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { emailSchema } from "./validation/EmailValidation";
-// import ReCAPTCHA from "react-google-recaptcha";
+import ReCAPTCHA from "react-google-recaptcha";
 
 function Form() {
   const [submitted, setSubmitted] = useState(false);
@@ -9,6 +9,10 @@ function Form() {
   const [invalidClass, setInvalidClass] = useState(false);
 
   // console.log("Captcha value:", value)
+
+  function onChange(value) {
+    console.log("captcha value: ", value);
+  }
 
   const submitHandler = async (e) => {
     e.preventDefault();
@@ -33,22 +37,25 @@ function Form() {
     <div>
       {!submitted ? (
         <form>
+          <ReCAPTCHA
+            sitekey={`process.env.REACT_APP_SITE_KEY`}
+            // onChange={onChange}
+            size="normal"
+          />
           <p className={`${!invalidClass ? "hidden" : "visible"}`}>
             Please enter a valid email address
           </p>
-          <input
-            className={`input-bar ${!invalidClass ? " " : "invalid-class"}`}
-            type="email"
-            placeholder="Your Email Here"
-            onChange={(e) => setInput(e.target.value)}
-          />
-          {/* <ReCAPTCHA
-            sitekey="6LebeWUkAAAAAG9Hi6Y1sUXlSrHtxhHQE_4nKG2_"
-            onChange={onChange}
-          /> */}
-          <button className="button-bar" onClick={submitHandler}>
-            Submit
-          </button>
+          <div className="bar-div">
+            <input
+              className={`input-bar ${!invalidClass ? " " : "invalid-class"}`}
+              type="email"
+              placeholder="Your Email Here"
+              onChange={(e) => setInput(e.target.value)}
+            />
+            <button className="button-bar" onClick={submitHandler}>
+              Submit
+            </button>
+          </div>
           <p className="disclaimer">One email a week, unsubscribe anytime.</p>
         </form>
       ) : (
