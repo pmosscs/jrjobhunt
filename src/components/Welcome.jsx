@@ -14,7 +14,11 @@ function Welcome() {
           Please consider taking this short survey to help us continue creating
           content that best helps our subscribers in their job search.
         </p>
-        <a href="https://jrjobhunt.surveysparrow.com/s/New-Subscriber/tt-rtumTWdBsywgWJwQGvxu4m">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://jrjobhunt.surveysparrow.com/s/New-Subscriber/tt-rtumTWdBsywgWJwQGvxu4m"
+        >
           <button className="survey-button">Take the survey</button>
         </a>
       </div>

@@ -23,7 +23,9 @@ function Help() {
               <p className="help-p2">
                 Not in your inbox? Try checking your promotion and spam folders,
                 then check your spelling and resubmit. If it doesn't show up
-                after a few minutes, reach out to us at contact@jrjobhunt.com
+                after a few minutes, reach out to us at contact@jrjobhunt.com.
+                You cannot receive the weekly emails without confirming your
+                email.
               </p>
             </div>
             <h1 className="help-section">Are you accepting advertisers?</h1>

@@ -10,9 +10,9 @@ function Form() {
 
   // console.log("Captcha value:", value)
 
-  function onChange(value) {
-    console.log("captcha value: ", value);
-  }
+  // function onChange(value) {
+  //   console.log("captcha value: ", value);
+  // }
 
   const submitHandler = async (e) => {
     e.preventDefault();
@@ -37,11 +37,11 @@ function Form() {
     <div>
       {!submitted ? (
         <form>
-          <ReCAPTCHA
+          {/* <ReCAPTCHA
             sitekey={`process.env.REACT_APP_SITE_KEY`}
             // onChange={onChange}
             size="normal"
-          />
+          /> */}
           <p className={`${!invalidClass ? "hidden" : "visible"}`}>
             Please enter a valid email address
           </p>
@@ -61,9 +61,13 @@ function Form() {
       ) : (
         <div className="submitted-div">
           <p className="thank-you-message">
-            Thank you for signing up. Please check for a welcome message in your
-            inbox and consider taking the short survey to help us continue
-            creating content specific to your needs.
+            Thank you for signing up. <br />
+            <strong>
+              Please verify your email by clicking the link that has just been
+              sent to you.
+            </strong>{" "}
+            <br />
+            We hope our resources are usefull in your job search!
           </p>
         </div>
       )}
