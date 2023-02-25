@@ -333,4 +333,8 @@ form {
   .input-bar {
     width: 250px;
   }
+
+ input, button {
+  font-size: 18px;
+ }
 }
