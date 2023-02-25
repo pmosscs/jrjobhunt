@@ -19,10 +19,13 @@
     "react-scripts": "5.0.1",
     "sib-api-v3-sdk": "^8.5.0",
     "web-vitals": "^2.1.4",
+    "webpack": "^5.75.0",
     "yup": "^0.32.11"
   },
   "main": "index.js",
   "scripts": {
+    "postinstall": "npm run webpack",
+    "webpack": "webpack",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
