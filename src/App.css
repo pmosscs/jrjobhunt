@@ -274,9 +274,8 @@ header {
   padding: 15px 20px;
   border-radius: 100px;
   background-color: #183a47;
-  border-top: solid gray 2px;
-  border-right: solid gray 2px;
-  border-bottom: solid gray 2px;
+  border: solid gray 2px;
+ 
   color: white;
 }
 
