@@ -329,4 +329,8 @@ form {
   .help-intro {
     font-size: 45px;
   }
+
+  .input-bar {
+    width: 250px;
+  }
 }
