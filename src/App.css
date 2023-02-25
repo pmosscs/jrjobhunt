@@ -330,11 +330,14 @@ form {
     font-size: 45px;
   }
 
-  .input-bar {
-    width: 250px;
-  }
 
- input, button {
-  font-size: 18px;
- }
+}
+
+@media only screen and (max-width: 400px) {
+  .input-bar {
+    width: 230px;
+  }
+  input, button {
+    font-size: 18px;
+  }
 }
